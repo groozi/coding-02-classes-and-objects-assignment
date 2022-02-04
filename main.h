@@ -8,5 +8,7 @@
 #ifndef MAIN_CLASSESPRACTICE_H
 #define MAIN_CLASSESPRACTICE_H
 
+#include <iostream>
+#include "triangle.h"
 
 #endif /* MAIN_CLASSESPRACTICE_H */

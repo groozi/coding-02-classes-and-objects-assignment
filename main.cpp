@@ -9,8 +9,16 @@
 
 int main(int argc, char** argv) {
 
+	//creates triangle object using constructor with no parameter
+	Triangle myTriangle1;
+	//creating triangle object using constructor that accepts parameters
+	Triangle myTriangle2(4, 8);
 
+	//testing triangle class
+	std::cout << "base, height: " << myTriangle1.getBase() << ", " << myTriangle1.getHeight() << std::endl;
 
+	std::cout << "base, height: " << myTriangle2.getBase() << ", " << myTriangle2.getHeight() << std::endl;
+	
 
     return 0;
 }
