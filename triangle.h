@@ -27,7 +27,7 @@ class Triangle {
      */
     int getBase();
     int getHeight();
-    int getArea();
+    double getArea();
 
 
     /*

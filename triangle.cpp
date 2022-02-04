@@ -28,6 +28,10 @@ int Triangle::getHeight(){
     return height;
 }
 
+double Triangle::getArea(){
+	return 0.5 * base * height;
+}
+
 void Triangle::setBase(int b){
     if (b > MIN){
         base = b;
