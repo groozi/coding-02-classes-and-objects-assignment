@@ -11,4 +11,27 @@
 
 #include "triangle.h"
 
+class Pyramid : public Triangle {
+public: 
+	Pyramid();
+	Pyramid(int, int, int);
+
+	/*
+	 * Getters
+	 */
+	int getLength();
+	int getWidth();
+	int getArea();
+
+	/*
+	 * Setters
+	 */
+	void setLength(int);
+	void setWidth(int);
+	void setLength(int);
+
+private:
+		int length, width;
+}
+
 #endif //CLASSES_PYRAMID_H
