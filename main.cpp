@@ -9,21 +9,19 @@
 
 int main(int argc, char** argv) {
 
-	//creates triangle object using constructor with no parameter
+	//creating objects. testing overloaded functions
 	Triangle myTriangle1;
-	//creating triangle object using constructor that accepts parameters
 	Triangle myTriangle2(1, 3);
 
-	//testing triangle class
-	std::cout << "base, height: " << myTriangle1.getBase() << ", " << myTriangle1.getHeight() << std::endl;
-
-	std::cout << "base, height: " << myTriangle2.getBase() << ", " << myTriangle2.getHeight() << std::endl;
-
-
 	Pyramid myPyramid1;
-	Pyramid myPyramid2(8.0, 6.0, 5.0);
+	Pyramid myPyramid2(8, 6, 5);
 
-	std::cout<< myPyramid1.getArea() << ", " << myPyramid2.getArea() << std::endl;
+	//displays results
+	displayTriangle(&myTriangle1);
+	displayTriangle(&myTriangle2);
+
+	displayPyramid(&myPyramid1);
+	displayPyramid(&myPyramid2);
 
     return 0;
 
