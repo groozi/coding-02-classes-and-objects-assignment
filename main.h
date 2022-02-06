@@ -9,7 +9,7 @@
 #define MAIN_CLASSESPRACTICE_H
 
 #include <iostream>
-#include "triangle.h"
 #include "pyramid.h"
+#include "functions.h"
 
 #endif /* MAIN_CLASSESPRACTICE_H */

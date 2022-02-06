@@ -8,39 +8,32 @@
 #ifndef CLASSES_TRIANGLE_H
 #define CLASSES_TRIANGLE_H
 
-
 #define MIN 0
-
 
 class Triangle {
 
     public:
     /*
      * constructors. one with, and one without parameters
-     *
      */ 
-
     Triangle();
-    Triangle(int, int);  
+    Triangle(double, double);  
+
     /*
      * Getters
      */
-    int getBase();
-    int getHeight();
+    double getBase();
+    double getHeight();
     double getArea();
-
 
     /*
      * Setters
      */
-    void setBase(int);
-    void setHeight(int);
-
+    void setBase(double);
+    void setHeight(double);
 
     protected:
-        //private variables defining the circle
-        int base, height;
-
+        double base, height;
 };
 
 #endif // CLASSES_TRIANGLE_H

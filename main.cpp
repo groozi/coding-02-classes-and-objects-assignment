@@ -11,10 +11,10 @@ int main(int argc, char** argv) {
 
     //creating objects. testing overloaded functions
     Triangle myTriangle1;
-    Triangle myTriangle2(1, -2);
+    Triangle myTriangle2(2, 7);
 
     Pyramid myPyramid1;
-    Pyramid myPyramid2(-2, -1, 5);
+    Pyramid myPyramid2(8, 6, 5);
 
     //displays results
     displayTriangle(&myTriangle1);

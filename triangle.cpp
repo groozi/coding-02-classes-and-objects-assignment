@@ -14,25 +14,25 @@ Triangle::Triangle() {
     setHeight(MIN);
 }
 
-Triangle:: Triangle (int b, int h){
+Triangle:: Triangle (double b, double h){
     setBase(b);
     setHeight(h);
 }
 
 //Getters and Setters
-int Triangle::getBase() {
+double Triangle::getBase() {
     return base;
 }
 
-int Triangle::getHeight(){
+double Triangle::getHeight(){
     return height;
 }
 
 double Triangle::getArea(){
-	return 0.5 * base * height;
+    return 0.5 * base * height;
 }
 
-void Triangle::setBase(int b){
+void Triangle::setBase(double b){
     if (b > MIN){
         base = b;
     }
@@ -41,7 +41,7 @@ void Triangle::setBase(int b){
     }
 }
 
-void Triangle::setHeight(int h){
+void Triangle::setHeight(double h){
     if (h > MIN){
         height = h;
     }
