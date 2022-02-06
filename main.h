@@ -10,5 +10,6 @@
 
 #include <iostream>
 #include "triangle.h"
+#include "pyramid.h"
 
 #endif /* MAIN_CLASSESPRACTICE_H */

@@ -10,28 +10,30 @@
 #define CLASSES_PYRAMID_H
 
 #include "triangle.h"
+#include <cmath>
 
 
 class Pyramid : public Triangle {
 public: 
 	Pyramid();
-	Pyramid(int, int, int);
+	Pyramid(double, double, double);
 
 	/*
 	 * Getters
 	 */
-	int getLength();
-	int getWidth();
+	double getLength();
+	double getWidth();
 	double getArea();
+	
 
 	/*
 	 * Setters
 	 */
-	void setLength(int);
-	void setWidth(int);
+	void setLength(double);
+	void setWidth(double);
 
 private:
-		int length, width;
-}
+		double length, width;
+};
 
 #endif //CLASSES_PYRAMID_H

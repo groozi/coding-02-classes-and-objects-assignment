@@ -13,31 +13,27 @@ Pyramid::Pyramid() {
 	setHeight(MIN);
 }
 
-Pyramid::Pyramid(int l, int w, int h){
+Pyramid::Pyramid(double l, double w, double h){
 	setLength(l);
 	setWidth(w);
 	setHeight(h);
 }
 
-Pyramid::~Pyramid() {
-}
 
-int Pyramid:: getLength(){
+double Pyramid:: getLength(){
 	return length;
 }
 
-int Pyramid:: getWidth(){
+double Pyramid:: getWidth(){
 	return width;
 }
 
-/*
- * example of override
- */
 double Pyramid :: getArea(){
-	
-}
+	return ((length*width) + (length*sqrt((pow((width/2),2)+pow(height, 2)))) + (width*(sqrt(pow((length/2),2)+pow(height,2)))));
+} 
 
-void Pyramid::setLength(int l){
+
+void Pyramid::setLength(double l){
 	if (l > MIN){
 		length = l;
 	}
@@ -46,7 +42,7 @@ void Pyramid::setLength(int l){
 	}
 }
 
-void Pyramid:: setWidth(int w){
+void Pyramid:: setWidth(double w){
 	if ( w > MIN){
 		width = w;
 	}
