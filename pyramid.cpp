@@ -8,47 +8,50 @@
 #include "pyramid.h"
 
 Pyramid::Pyramid() {
-	setLength(MIN);
-	setWidth(MIN);
-	setHeight(MIN);
+    setLength(MIN);
+    setWidth(MIN);
+    setHeight(MIN);
 }
 
 Pyramid::Pyramid(double l, double w, double h){
-	setLength(l);
-	setWidth(w);
-	setHeight(h);
+    setLength(l);
+    setWidth(w);
+    setHeight(h);
 }
 
-
 double Pyramid:: getLength(){
-	return length;
+    return length;
 }
 
 double Pyramid:: getWidth(){
-	return width;
+    return width;
 }
 
+/*
+ * formula to calculate pyramid surface area
+ */
 double Pyramid :: getArea(){
-	return ((length*width) + (length*sqrt((pow((width/2),2)+pow(height, 2)))) + (width*(sqrt(pow((length/2),2)+pow(height,2)))));
+    return ((length*width) + (length*sqrt((pow((width/2),2)+pow(height, 2)))) + (width*(sqrt(pow((length/2),2)+pow(height,2)))));
 } 
 
+double Pyramid :: getVolume(){
+    return ((length*width*height)/3);	
+}
 
 void Pyramid::setLength(double l){
-	if (l > MIN){
-		length = l;
-	}
-	else {
-		length = MIN;
-	}
+    if (l > MIN){
+         length = l;
+    }
+    else {
+        length = MIN;
+    }
 }
 
 void Pyramid:: setWidth(double w){
-	if ( w > MIN){
-		width = w;
-	}
-	else {
-		width = w;
-	}
-	
+    if ( w > MIN){
+        width = w;
+    }
+    else {
+        width = MIN;
+    }
 }
-

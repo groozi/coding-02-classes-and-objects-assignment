@@ -19,5 +19,6 @@ void displayPyramid(Pyramid *myPyramid){
     std::cout << "Pyramid width: " << myPyramid->getWidth() << std::endl;
     std::cout << "Pyramid height: " << myPyramid->getHeight() << std::endl;
     std::cout << "Pyramid area: " << myPyramid->getArea() << std::endl;
+    std::cout << "Pyramid volume: " << myPyramid->getVolume() << std::endl;
     std::cout << std::endl;
 }

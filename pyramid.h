@@ -5,35 +5,36 @@
 * compiling, version control, and GitHub. 
 **********************/
 
-
 #ifndef CLASSES_PYRAMID_H
 #define CLASSES_PYRAMID_H
 
 #include "triangle.h"
 #include <cmath>
 
-
 class Pyramid : public Triangle {
 public: 
-	Pyramid();
-	Pyramid(double, double, double);
+    /*
+     * Constructors. example of overload
+     */
+    Pyramid();
+    Pyramid(double, double, double);
 
-	/*
-	 * Getters
-	 */
+    /*
+     * Getters
+     */
 	double getLength();
 	double getWidth();
-	double getArea();
+	double getArea();	//example of override
+	double getVolume(); 
 	
-
-	/*
-	 * Setters
-	 */
-	void setLength(double);
-	void setWidth(double);
+    /*
+     * Setters
+     */
+    void setLength(double);
+    void setWidth(double);
 
 private:
-		double length, width;
+    double length, width;
 };
 
 #endif //CLASSES_PYRAMID_H
