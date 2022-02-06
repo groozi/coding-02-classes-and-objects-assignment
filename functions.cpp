@@ -6,3 +6,9 @@
 **********************/
 
 #include "functions.h"
+
+void displayTriangle(Triangle *myTriangle){
+    std::cout << "Triangle base: " << myTriangle->getBase() << std::endl;
+    std::cout << "Triangle height: " << myTriangle->getHeight() << std::endl;
+    std::cout << "Triangle area: " << myTriangle->getArea() << std::endl;
+}
